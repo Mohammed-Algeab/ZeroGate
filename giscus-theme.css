@@ -1,0 +1,86 @@
+/*
+  ZeroGate Custom Giscus Theme
+  ─────────────────────────────────────────────────────────────────────────────
+  Deploy this file to: https://mohammed-algeab.github.io/ZeroGate/giscus-theme.css
+  Then update GISCUS_CUSTOM_THEME_URL in src/components/game/GiscusComments.tsx
+  ─────────────────────────────────────────────────────────────────────────────
+*/
+
+:root {
+  --color-canvas-default: hsl(240 10% 3.9%);
+  --color-canvas-overlay: hsl(240 10% 7%);
+  --color-canvas-inset: hsl(240 10% 6%);
+  --color-canvas-subtle: hsl(240 3.7% 10%);
+
+  --color-border-default: hsl(240 3.7% 18%);
+  --color-border-muted: hsl(240 3.7% 15%);
+  --color-border-subtle: hsl(240 3.7% 13%);
+
+  --color-fg-default: hsl(0 0% 95%);
+  --color-fg-muted: hsl(240 5% 60%);
+  --color-fg-subtle: hsl(240 5% 50%);
+  --color-fg-on-emphasis: hsl(0 0% 100%);
+
+  /* Primary = ZeroGate green */
+  --color-accent-fg: hsl(142.1 70.6% 45.3%);
+  --color-accent-emphasis: hsl(142.1 70.6% 45.3%);
+  --color-accent-muted: hsl(142.1 70.6% 45.3% / 0.2);
+  --color-accent-subtle: hsl(142.1 70.6% 45.3% / 0.1);
+
+  --color-btn-primary-bg: hsl(142.1 70.6% 45.3%);
+  --color-btn-primary-hover-bg: hsl(142.1 70.6% 40%);
+  --color-btn-primary-border: hsl(142.1 70.6% 38%);
+  --color-btn-primary-text: hsl(144.9 80.4% 10%);
+  --color-btn-primary-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  --color-btn-primary-inset-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+
+  --color-btn-bg: hsl(240 3.7% 15%);
+  --color-btn-hover-bg: hsl(240 3.7% 18%);
+  --color-btn-active-bg: hsl(240 3.7% 13%);
+  --color-btn-border: hsl(240 3.7% 20%);
+  --color-btn-text: hsl(0 0% 92%);
+  --color-btn-hover-border: hsl(240 3.7% 25%);
+  --color-btn-active-border: hsl(240 3.7% 22%);
+  --color-btn-inset-shadow: none;
+  --color-btn-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  --color-btn-counter-bg: hsl(240 3.7% 20%);
+
+  --color-neutral-emphasis-plus: hsl(240 5% 55%);
+  --color-neutral-emphasis: hsl(240 5% 50%);
+  --color-neutral-muted: hsl(240 3.7% 15% / 0.6);
+  --color-neutral-subtle: hsl(240 3.7% 15% / 0.4);
+
+  --color-input-bg: hsl(240 3.7% 8%);
+  --color-input-disabled-bg: hsl(240 3.7% 10%);
+  --color-input-contrast-bg: hsl(240 3.7% 6%);
+
+  --color-header-bg: hsl(240 3.7% 12%);
+  --color-header-divider: hsl(240 3.7% 18%);
+
+  --color-reactions-button-bg: hsl(240 3.7% 12%);
+
+  --color-timeline-badge-bg: hsl(240 3.7% 12%);
+
+  --color-avatar-bg: hsl(240 3.7% 15%);
+  --color-avatar-border: hsl(240 3.7% 20%);
+
+  --color-social-reaction-bg-hover: hsl(240 3.7% 15%);
+  --color-social-reaction-bg-reacted-hover: hsl(142.1 70.6% 45.3% / 0.15);
+}
+
+/* Round corners & add subtle glow on focus */
+.gsc-comment-box-textarea:focus {
+  outline: none;
+  border-color: hsl(142.1 70.6% 45.3%) !important;
+  box-shadow: 0 0 0 3px hsl(142.1 70.6% 45.3% / 0.2) !important;
+}
+
+/* Slightly rounded cards */
+.gsc-comment {
+  border-radius: 12px !important;
+}
+
+/* Font family */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
